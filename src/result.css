@@ -85,7 +85,7 @@
   display: flex;
   align-items: start;
   width: 368px;
-  margin-left: 40px;
+  margin-left: 80px;
   margin-bottom: 28px;
 }
 
@@ -100,8 +100,7 @@
   height: 56px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
-  margin-bottom: 41px;
+  margin-bottom: 12px;
   padding: 0 16px;
 }
 .box-left-side{
@@ -112,9 +111,7 @@
 .box-left-side img{
   margin-right: 12px;
 }
-.box-left-side p{
-  color: rgba(255, 85, 85, 1);
-}
+
 
 .box-right-side span{
   color: rgba(48, 59, 89, 1);
@@ -128,6 +125,7 @@ button{
   border-radius: 128px;
   background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
   border: none;
+  margin-top: 25px;
 
   font-size: 18px;
   font-style: normal;
@@ -135,4 +133,51 @@ button{
   line-height: normal;
   color: white;
   cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+  .container{
+    width: 375px;
+    height: 809px;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .left-side{
+    width: 375px;
+    height: 356px;
+  }
+  .left-side h3{
+    margin-top: 24px;
+  }
+  .circle-box{
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    margin-top: 15px;
+  }
+  .circle-box span{
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 72px;
+  }
+  .great{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -24px;
+  }
+  .h3-div{
+    margin-top: 20px;
+  }
+  .last-text{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  button{
+    background: #303B59;
+  }
 }
